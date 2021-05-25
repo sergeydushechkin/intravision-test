@@ -1,23 +1,64 @@
 @font-face {
-  font-family: "PT Sans";
-  src: local("PT Sans"),
-    local("PTSans-Regular"),
-    url("../fonts/ptsans.woff") format("woff"),
-    url("../fonts/ptsans.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "Ubuntu Regular";
   font-style: normal;
+  font-weight: normal;
   font-display: optional;
+  src: local("Ubuntu Regular"), url("../fonts/Ubuntu-R.woff") format("woff");
 }
 
 @font-face {
-  font-family: "PT Sans";
-  src: local("PT Sans Bold"),
-    local("PTSans-Bold"),
-    url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight: bold;
+  font-family: "Ubuntu Light";
   font-style: normal;
+  font-weight: normal;
   font-display: optional;
+  src: local("Ubuntu Light"), url("../fonts/Ubuntu-L.woff") format("woff");
 }
 
-/*font-family: "PT Sans", "Arial", sans-serif;*/
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto Regular"), url("Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  font-weight: normal;
+  font-display: optional;
+  src: local("Roboto Light"), url("../fonts/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: normal;
+  font-display: optional;
+  src: local("Cuprum"), url("../fonts/Cuprum-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: optional;
+  src: local("Myriad Pro Regular"), url("../fonts/Myriadpro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CorporateA Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: optional;
+  src: local("CorporateA-Regular"), url("../fonts/CorporateA-Regular.otf") format("opentype");
+}
+
+/*
+font-family: "Ubuntu Regular", "Arial", sans-serif;
+font-family: "Ubuntu Light", "Arial", sans-serif;
+font-family: "Roboto Regular", "Arial", sans-serif;
+font-family: "Roboto Light", "Arial", sans-serif;
+font-family: "Cuprum", "Arial", sans-serif;
+font-family: "Myriad Pro Regular", "Arial", sans-serif;
+font-family: "CorporateA Regular", "Georgia", serif;
+*/
