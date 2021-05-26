@@ -1,9 +1,10 @@
-.main-menu {
+.main-menu__list {
   list-style: none;
 
   margin: 0;
   padding: 0;
 }
+
 
 .main-menu__item {
   text-align: center;
@@ -13,27 +14,47 @@
   display: block;
   position: relative;
 
-  padding-top: 70px;
+  width: 96px;
+  height: 70px;
 
+  padding-top: 47px;
+  padding-bottom: 10px;
+
+  font-family: "Roboto Light", "Arial", sans-serif;
+  font-size: 12px;
   color: #ffffff;
   text-decoration: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 14px;
 
   &--active {
     background-color: #002c49;
   }
 
-  &::before {
-    position: absolute;
-
-    content: "";
-
-    left: 0;
-    top: 0;
-
-    width: 22px;
-    height: 26px;
-
+  &--base {
     background-image: url("img/book.png");
-    background-repeat: no-repeat;
+  }
+
+  &--requests {
+    background-image: url("img/file.png");
+  }
+
+  &--staff {
+    background-image: url("img/people.png");
+    background-position-y: 18px;
+  }
+
+  &--clients {
+    background-image: url("img/city.png");
+  }
+
+  &--actives {
+    background-image: url("img/analytics.png");
+  }
+
+  &--settings {
+    background-image: url("img/settings.png");
   }
 }

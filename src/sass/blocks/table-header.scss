@@ -1,0 +1,44 @@
+.table-header__item {
+  padding: 13px 0;
+
+  font-family: "Ubuntu Regular", "Arial", sans-serif;
+  font-size: 16px;
+  color: #404147;
+
+  & .table-header__item-container {
+    border-right: 1px solid #e2e7ea;
+  }
+
+  &:first-child .table-header__item-container {
+    border-right: none;
+  }
+
+  &:last-child .table-header__item-container {
+    border-right: none;
+  }
+
+  &--priority {
+    width: 5px;
+    padding: 0;
+  }
+
+  &--id {
+    width: 8%;
+  }
+
+  &--title {
+    width: 30%;
+  }
+
+  &--status {
+    width: 20%;
+  }
+
+  &--executor {
+    width: 10%;
+  }
+}
+
+.table-header__item-container {
+  display: block;
+}

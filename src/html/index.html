@@ -50,25 +50,27 @@
 
         <section class="main-page__search search">
           <h2 class="visually-hidden">Search</h2>
-          <input class="search__input" type="text">
+          <div class="search__input-container">
+            <input class="search__input" type="text">
+          </div>
         </section>
 
         <section class="main-page__requests requests">
           <h2 class="visually-hidden">Requests</h2>
 
           <div class="requests__options options">
-            <button class="options__create" type="button">Создать заявку</button>
+            <button class="options__create button" type="button">Создать заявку</button>
           </div>
 
           <div class="requests__workspace workspace">
             <table class="workspace__table">
               <thead class="workspace__table-header table-header">
                 <tr class="table-header__list">
-                  <th class="table-header__item"><span class="visually-hidden">Приоритет</span></th>
-                  <th class="table-header__item">ID</th>
-                  <th class="table-header__item">Название</th>
-                  <th class="table-header__item">Статус</th>
-                  <th class="table-header__item">Исполнитель</th>
+                  <th class="table-header__item table-header__item--priority"><span class="visually-hidden">Приоритет</span></th>
+                  <th class="table-header__item table-header__item--id"><span class="table-header__item-container">ID</span></th>
+                  <th class="table-header__item table-header__item--title"><span class="table-header__item-container">Название</span></th>
+                  <th class="table-header__item table-header__item--status"><span class="table-header__item-container">Статус</span></th>
+                  <th class="table-header__item table-header__item--executor"><span class="table-header__item-container">Исполнитель</span></th>
                 </tr>
               </thead>
               <tbody class="workspace__table-body table-body">
@@ -115,7 +117,7 @@
                     <input id="description" class="new__text new__text--description" type="text">
                   </div>
                   <div class="new__item">
-                    <button class="new__button " type="button">Сохранить</button>
+                    <button class="new__button button" type="button">Сохранить</button>
                   </div>
                 </form>
               </div>
@@ -139,7 +141,7 @@
                     <input class="add-comment__text" id="add-comment" type="text">
                   </div>
                   <div class="data__item">
-                    <button class="data__button" type="button">Сохранить</button>
+                    <button class="data__button button" type="button">Сохранить</button>
                   </div>
                   <div class="data__comments comments">
                     <ul class="comments__list">
