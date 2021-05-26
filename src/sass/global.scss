@@ -29,12 +29,6 @@ html {
 
 body {
   margin: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
-  background-color: #000000;
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    background-color: #f2f2f2;
-  }
+  font-family: "Roboto Light", "Arial", sans-serif;
+  width: 1600px;
 }

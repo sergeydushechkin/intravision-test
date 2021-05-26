@@ -1,0 +1,39 @@
+.main-menu {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  text-align: center;
+}
+
+.main-menu__link {
+  display: block;
+  position: relative;
+
+  padding-top: 70px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  &--active {
+    background-color: #002c49;
+  }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    left: 0;
+    top: 0;
+
+    width: 22px;
+    height: 26px;
+
+    background-image: url("img/book.png");
+    background-repeat: no-repeat;
+  }
+}
