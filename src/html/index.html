@@ -16,10 +16,192 @@
 <body>
   <div id="root">
     <div class="container">
-      <section class="main">
-        <h1 class="main__header header"></h1>
 
-      </section>
+      <header class="main-header__menu menu">
+        <div class="menu__logo logo">
+          <img class="logo__image" src="img/logo.png" alt="logo"  width="52" height="44">
+        </div>
+        <nav class="menu__main-menu main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">База знаний</a>
+            </li>
+            <li class="main-menu__item main-menu__item--active">
+              <a class="main-menu__link" href="#">Заявки</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Сотрудники</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Клиенты</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Активы</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Настройки</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-page">
+        <h1 class="visually-hidden">Requests</h1>
+
+        <section class="main-page__search search">
+          <h2 class="visually-hidden">Search</h2>
+          <input class="search__input" type="text">
+        </section>
+
+        <section class="main-page__requests requests">
+          <h2 class="visually-hidden">Requests</h2>
+
+          <div class="requests__options options">
+            <button class="options__create" type="button">Создать заявку</button>
+          </div>
+
+          <div class="requests__workspace workspace">
+            <table class="workspace__table">
+              <thead class="workspace__table-header table-header">
+                <tr class="table-header__list">
+                  <th class="table-header__item"><span class="visually-hidden">Приоритет</span></th>
+                  <th class="table-header__item">ID</th>
+                  <th class="table-header__item">Название</th>
+                  <th class="table-header__item">Статус</th>
+                  <th class="table-header__item">Исполнитель</th>
+                </tr>
+              </thead>
+              <tbody class="workspace__table-body table-body">
+                <tr class="table-body__list">
+                  <td class="table-body__item">
+                    <div class="table-body__priority table-body__priority--high">
+                      <span class="visually-hidden">Высокий</span>
+                    </div>
+                  </td>
+                  <td class="table-body__item">50 061</td>
+                  <td class="table-body__item">Не работает кнопка печати</td>
+                  <td class="table-body__item"><span class="table-body__status table-body__status--open">открыта</span></td>
+                  <td class="table-body__item">Менеджеров Сергей</td>
+                </tr>
+                <tr class="table-body__list">
+                  <td class="table-body__item">
+                    <div class="table-body__priority table-body__priority--medium">
+                      <span class="visually-hidden">Средний</span>
+                    </div>
+                  </td>
+                  <td class="table-body__item">50 062</td>
+                  <td class="table-body__item">Не работает кнопка печати</td>
+                  <td class="table-body__item"><span class="table-body__status table-body__status-close">закрыта</span></td>
+                  <td class="table-body__item">Менеджеров Сергей</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="requests__details details">
+            <div class="details__detail detail">
+              <div class="detail__detail-header detail-header">
+                <h3 class="detail-header__title">Новая заявка</h3>
+                <div class="detail-header__close"><span class="visually-hidden">Close</span></div>
+              </div>
+              <div class="detail__new new">
+                <form class="new__form" method="POST" action=".">
+                  <div class="new__item">
+                    <label class="new__label" for="title">Название</label>
+                    <input id="title" class="new__text new__text--title" type="text">
+                  </div>
+                  <div class="new__item">
+                    <label class="new__label" for="description">Описание</label>
+                    <input id="description" class="new__text new__text--description" type="text">
+                  </div>
+                  <div class="new__item">
+                    <button class="new__button " type="button">Сохранить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="details__detail detail">
+              <div class="detail__detail-header detail-header">
+                <h3 class="detail-header__title">№67 304</h3>
+                <div class="detail-header__text">Просьба оценить разработку рекламного баннера на новорижском шоссе. Форматы 600x500x30. Материал - полиестирол хорошего качества.</div>
+                <div class="detail-header__close"><span class="visually-hidden">Close</span></div>
+              </div>
+
+              <div class="detail__edit edit">
+                <div class="edit__data data">
+                  <div class="data__text text">
+                    <h3 class="text__header">Описание</h3>
+                    <p class="text__description">Текст описания</p>
+                  </div>
+                  <div class="data__add-comment add-comment">
+                    <label class="add-comment__label" for="add-comment">Добавление комментариев</label>
+                    <input class="add-comment__text" id="add-comment" type="text">
+                  </div>
+                  <div class="data__item">
+                    <button class="data__button" type="button">Сохранить</button>
+                  </div>
+                  <div class="data__comments comments">
+                    <ul class="comments__list">
+                      <li class="comments__comment comment">
+                        <div class="comment__container">
+                          <div class="comment__avatar"><span class="visually-hidden">Avatar</span></div>
+                          <div>
+                            <div class="comment__author">Иванов Александр</div>
+                            <div class="comment__date">12 августа, 10:00 прокомментировал</div>
+                          </div>
+                        </div>
+                        <div class="comment__text">
+                          Длительное время занимает сохранение продажи (вне зависимости от кол-ва добавленных товаров). Проверить, почему занимает столько времени. Это третья строка Это третья строкаЭто третья строкаЭто третья строкаЭто третья строкаЭто третья строкаЭто третья строкаЭто третья строкаЭто третья строкаЭто третья строкаЭто третья строка  третья строка  тья строка  тья строка  конец!
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="edit__properties properties">
+                  <ul class="properties__list">
+                    <li class="properties__property-status property-status">
+                      <span class="property-status__indicator"></span>
+                      <span class="property-status__text">В работе</span>
+                    </li>
+                    <li class="properties__property property">
+                      <h3 class="property__title">Заявитель</h3>
+                      <div class="property__data">Александр Вознесенский</div>
+                    </li>
+                    <li class="properties__property property">
+                      <h3 class="property__title">Создана</h3>
+                      <div class="property__data">Маркова Анна</div>
+                    </li>
+                    <li class="properties__property property">
+                      <h3 class="property__title">Исполнитель</h3>
+                      <div class="property__data">Кожин Игорь</div>
+                    </li>
+                    <li class="properties__property property">
+                      <h3 class="property__title">Приоритет</h3>
+                      <div class="property__data">Высокий</div>
+                    </li>
+                    <li class="properties__property property">
+                      <h3 class="property__title">Срок</h3>
+                      <div class="property__data property__data--calendar">12.11.2018 г.</div>
+                    </li>
+                    <li class="properties__property property">
+                      <h3 class="property__title">Теги</h3>
+                      <ul class="property__tags tags">
+                        <li class="tags__item">Сервер 1</li>
+                        <li class="tags__item">mb_support_mymercedes</li>
+                      </ul>>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </main>
     </div>
   </div>
   <script src="./bundle.js"></script>
