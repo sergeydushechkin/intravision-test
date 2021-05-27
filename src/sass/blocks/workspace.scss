@@ -1,3 +1,18 @@
+.workspace {
+  display: flex;
+  flex-direction: column;
+}
+
+.workspace__options {
+  margin-bottom: 11px;
+}
+
+.workspace__table-container {
+  overflow-y: scroll;
+}
+
 .workspace__table {
-  border-collapse: collapse;
+  padding-top: 27px;
+
+  overflow-y: scroll;
 }

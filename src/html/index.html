@@ -58,46 +58,192 @@
         <section class="main-page__requests requests">
           <h2 class="visually-hidden">Requests</h2>
 
-          <div class="requests__options options">
-            <button class="options__create button" type="button">Создать заявку</button>
-          </div>
-
           <div class="requests__workspace workspace">
-            <table class="workspace__table table">
-              <thead class="table__head">
-                <tr class="table__head-row">
-                  <th class="table__header table__header--priority"><span class="visually-hidden">Приоритет</span></th>
-                  <th class="table__header table__header--id"><span class="table__header-container">ID</span></th>
-                  <th class="table__header table__header--title"><span class="table__header-container">Название</span></th>
-                  <th class="table__header table__header--status"><span class="table__header-container">Статус</span></th>
-                  <th class="table__header table__header--executor"><span class="table__header-container">Исполнитель</span></th>
-                </tr>
-              </thead>
-              <tbody class="table__body">
-                <tr class="table__body-row">
-                  <td class="table__cell">
-                    <div class="table__priority table__priority--high">
-                      <span class="visually-hidden">Высокий</span>
-                    </div>
-                  </td>
-                  <td class="table__cell">50 061</td>
-                  <td class="table__cell">Не работает кнопка печати</td>
-                  <td class="table__cell"><span class="table__status table__status--open">открыта</span></td>
-                  <td class="table__cell">Менеджеров Сергей</td>
-                </tr>
-                <tr class="table__body-row">
-                  <td class="table__cell">
-                    <div class="table__priority table__priority--medium">
-                      <span class="visually-hidden">Средний</span>
-                    </div>
-                  </td>
-                  <td class="table__cell">50 062</td>
-                  <td class="table__cell">Не работает кнопка печати</td>
-                  <td class="table__cell"><span class="table__status table__status-close">закрыта</span></td>
-                  <td class="table__cell">Менеджеров Сергей</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="workspace__options options">
+              <button class="options__create button" type="button">Создать заявку</button>
+            </div>
+
+            <div class="workspace__table-container">
+              <table class="workspace__table table">
+                <thead class="table__head">
+                  <tr class="table__head-row">
+                    <th class="table__header table__header--priority"><span class="visually-hidden">Приоритет</span></th>
+                    <th class="table__header table__header--id"><span class="table__header-container">ID</span></th>
+                    <th class="table__header table__header--title"><span class="table__header-container">Название</span></th>
+                    <th class="table__header table__header--status"><span class="table__header-container">Статус</span></th>
+                    <th class="table__header table__header--executor"><span class="table__header-container">Исполнитель</span></th>
+                  </tr>
+                </thead>
+                <tbody class="table__body">
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--high">
+                        <span class="visually-hidden">Высокий</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 061</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status--open">открыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+                  <tr class="table__body-row">
+                    <td class="table__cell">
+                      <div class="table__priority table__priority--medium">
+                        <span class="visually-hidden">Средний</span>
+                      </div>
+                    </td>
+                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">Не работает кнопка печати</td>
+                    <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
+                    <td class="table__cell">Менеджеров Сергей</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div class="requests__details details">
@@ -192,7 +338,7 @@
                       <ul class="property__tags tags">
                         <li class="tags__item">Сервер 1</li>
                         <li class="tags__item">mb_support_mymercedes</li>
-                      </ul>>
+                      </ul>
                     </li>
                   </ul>
                 </div>

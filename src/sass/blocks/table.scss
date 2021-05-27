@@ -1,17 +1,17 @@
 .table {
   width: 100%;
-}
 
-.table__head {
-  width: 100%;
+  border-collapse: collapse;
 }
 
 .table__header {
   padding: 13px 0;
+  padding-left: 14px;
 
   font-family: "Ubuntu Regular", "Arial", sans-serif;
   font-size: 16px;
   color: #404147;
+  text-align: left;
 
   & .table__header-container {
     border-right: 1px solid #e2e7ea;
@@ -26,24 +26,26 @@
   }
 
   &--priority {
-    width: 5px;
+    width: 8px;
     padding: 0;
   }
 
   &--id {
-    width: 100px;
+    width: 108px;
+    text-align: center;
   }
 
   &--title {
-    width: 20px;
+    width: 419px;
   }
 
   &--status {
-    width: 100px;
+    width: 125px;
   }
 
   &--executor {
-    width: 100px;
+    width: auto;
+    padding-left: 30px;
   }
 }
 
@@ -58,18 +60,30 @@
 }
 
 .table__cell {
-  padding: 18px 16px;
+  padding: 18px 5px;
 
   font-family: "Roboto Light", "Arial", sans-serif;
   font-size: 16px;
   color: #525460;
-
-  background-origin: padding-box;
 
   border-top: 1px solid #e2e7ea;
   border-bottom: 1px solid #e2e7ea;
 
   &:first-child {
     padding: 18px 0;
+  }
+
+  &:nth-child(2) {
+    padding-left: 29px;
+    text-align: center;
+  }
+
+  &:nth-child(3) {
+    padding-left: 15px;
+  }
+
+  &--status {
+    padding-left: 17px;
+    text-align: left;
   }
 }

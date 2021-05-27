@@ -1,7 +1,5 @@
 .requests {
-  padding-top: 27px;
-}
+  display: flex;
 
-.requests__options {
-  margin-bottom: 11px;
+  overflow-y: clip;
 }
