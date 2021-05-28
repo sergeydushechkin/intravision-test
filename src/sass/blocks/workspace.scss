@@ -8,11 +8,9 @@
 }
 
 .workspace__table-container {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .workspace__table {
   padding-top: 27px;
-
-  overflow-y: scroll;
 }
