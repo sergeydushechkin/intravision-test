@@ -1,4 +1,6 @@
 .table {
+  position: relative;
+
   width: 100%;
 
   border-collapse: collapse;
@@ -7,6 +9,7 @@
 .table__header {
   padding: 13px 0;
   padding-left: 14px;
+  padding-bottom: 15px;
 
   font-family: "Ubuntu Regular", "Arial", sans-serif;
   font-size: 16px;
@@ -61,6 +64,7 @@
 
 .table__cell {
   padding: 18px 5px;
+  padding-bottom: 20px;
 
   font-family: "Roboto Light", "Arial", sans-serif;
   font-size: 16px;
@@ -70,7 +74,8 @@
   border-bottom: 1px solid #e2e7ea;
 
   &:first-child {
-    padding: 18px 0;
+    padding: 3px 0;
+    padding-left: 3px;
   }
 
   &:nth-child(2) {
@@ -85,5 +90,37 @@
   &--status {
     padding-left: 17px;
     text-align: left;
+  }
+}
+
+.table__priority {
+  padding: 24px 0;
+  width: 4px;
+
+  &--high {
+    background-color: red;
+  }
+
+  &--medium {
+    background-color: yellow;
+  }
+}
+
+.table--short {
+  & .table__header--status,
+  & .table__header--executor,
+  & .table__cell:nth-child(5),
+  & .table__cell--status {
+    display: none;
+  }
+
+  & .table__header--id {
+    width: 109px;
+    padding-left: 0;
+  }
+
+  & .table__header--title {
+    width: 390px;
+    padding-left: 15px;
   }
 }

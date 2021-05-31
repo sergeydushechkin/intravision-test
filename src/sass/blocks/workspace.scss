@@ -1,6 +1,12 @@
 .workspace {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+
+  &--short {
+    width: auto;
+  }
 }
 
 .workspace__options {

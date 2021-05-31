@@ -1,0 +1,29 @@
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 27px;
+  padding-left: 34px;
+
+  background-color: #1a4876;
+}
+
+.detail-header__title {
+  margin: 0;
+
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.detail-header__close {
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}

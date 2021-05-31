@@ -58,13 +58,13 @@
         <section class="main-page__requests requests">
           <h2 class="visually-hidden">Requests</h2>
 
-          <div class="requests__workspace workspace">
+          <div class="requests__workspace workspace workspace--short">
             <div class="workspace__options options">
               <button class="options__create button" type="button">Создать заявку</button>
             </div>
 
             <div class="workspace__table-container">
-              <table class="workspace__table table">
+              <table class="workspace__table table table--short">
                 <thead class="table__head">
                   <tr class="table__head-row">
                     <th class="table__header table__header--priority"><span class="visually-hidden">Приоритет</span></th>
@@ -231,11 +231,11 @@
                   </tr>
                   <tr class="table__body-row">
                     <td class="table__cell">
-                      <div class="table__priority table__priority--medium">
+                      <div class="table__priority table__priority--high">
                         <span class="visually-hidden">Средний</span>
                       </div>
                     </td>
-                    <td class="table__cell">50 062</td>
+                    <td class="table__cell">66 555</td>
                     <td class="table__cell">Не работает кнопка печати</td>
                     <td class="table__cell table__cell--status"><span class="table__status status status-close">закрыта</span></td>
                     <td class="table__cell">Менеджеров Сергей</td>
@@ -256,11 +256,11 @@
                 <form class="new__form" method="POST" action=".">
                   <div class="new__item">
                     <label class="new__label" for="title">Название</label>
-                    <input id="title" class="new__text new__text--title" type="text">
+                    <textarea name="title" id="title" class="new__text new__text--title" cols="74" rows="4"></textarea>
                   </div>
                   <div class="new__item">
                     <label class="new__label" for="description">Описание</label>
-                    <input id="description" class="new__text new__text--description" type="text">
+                    <textarea name="description" id="description" class="new__text new__text--description" cols="74" rows="7"></textarea>
                   </div>
                   <div class="new__item">
                     <button class="new__button button" type="button">Сохранить</button>
