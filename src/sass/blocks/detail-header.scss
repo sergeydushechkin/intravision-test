@@ -1,15 +1,23 @@
 .detail-header {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 
-  padding: 20px 27px;
-  padding-left: 34px;
+  display: flex;
+  align-items: center;
+
+  padding: 20px 75px;
+  padding-left: 42px;
 
   background-color: #1a4876;
+
+  &--text {
+    padding: 13px 75px;
+    padding-left: 42px;
+  }
 }
 
 .detail-header__title {
   margin: 0;
+  margin-right: 27px;
 
   font-family: "Myriad Pro Regular", "Arial", sans-serif;
   color: #ffffff;
@@ -18,7 +26,20 @@
   font-weight: normal;
 }
 
+.detail-header__text {
+  font-family: "Roboto Light", "Arial", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+
+  word-spacing: 0.9px;
+}
+
 .detail-header__close {
+  position: absolute;
+
+  top: 23px;
+  right: 31px;
+
   width: 16px;
   height: 16px;
 

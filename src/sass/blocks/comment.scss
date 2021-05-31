@@ -1,0 +1,22 @@
+.comment__author {
+  font-family: "Ubuntu Regular", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.comment__date {
+  font-family: "CorporateA Regular", "Georgia", serif;
+  font-size: 12px;
+  color: #63677c;
+}
+
+.comment__text {
+  padding: 5px 10px;
+
+  font-family: "Roboto Light", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: #e3e9f4;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
