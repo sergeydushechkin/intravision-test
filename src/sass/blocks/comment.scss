@@ -1,4 +1,28 @@
+.comment__container {
+  display: flex;
+
+  margin-bottom: 18px;
+}
+
+.comment__avatar {
+  width: 40px;
+  height: 40px;
+
+  margin-right: 10px;
+  margin-left: -8px;
+
+  background-color: red;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+
+.comment__info {
+  padding-top: 8px;
+}
+
 .comment__author {
+  margin-bottom: 9px;
+
   font-family: "Ubuntu Regular", "Arial", sans-serif;
   font-size: 14px;
 }
@@ -10,7 +34,10 @@
 }
 
 .comment__text {
-  padding: 5px 10px;
+  margin-left: 44px;
+  padding: 9px 10px;
+  padding-right: 40px;
+  padding-bottom: 21px;
 
   font-family: "Roboto Light", "Arial", sans-serif;
   font-size: 14px;
