@@ -1,6 +1,7 @@
 .properties {
   width: 240px;
 
+  padding-top: 25px;
   padding-left: 28px;
 
   border-left: 1px solid #d7dce0;
@@ -10,4 +11,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.properties__property {
+  margin-bottom: 25px;
+
+  &--applicant {
+    margin-bottom: 44px;
+  }
+}
+
+.properties__property-status {
+  margin-bottom: 31px;
 }
