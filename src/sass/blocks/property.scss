@@ -6,4 +6,35 @@
   font-family: "Roboto Light", "Arial", sans-serif;
   font-size: 14px;
   color: #030303;
+
+  &--calendar {
+    position: relative;
+
+    padding-left: 25px;
+
+    line-height: 24px;
+  }
+
+  &--calendar::before {
+    content: "";
+
+    position: absolute;
+
+    top: 5px;
+    left: 1px;
+
+    width: 18px;
+    height: 15px;
+
+    background-image: url("./img/calendar.png");
+  }
+}
+
+.property__link {
+  color: #1974d2;
+  text-decoration: none;
+}
+
+.property__selector {
+  display: block;
 }

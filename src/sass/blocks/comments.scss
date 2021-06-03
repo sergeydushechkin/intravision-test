@@ -1,4 +1,10 @@
+.comments {
+  overflow-y: hidden;
+}
+
 .comments__list {
+  position: relative;
+
   list-style: none;
   margin: 0;
   padding: 0;

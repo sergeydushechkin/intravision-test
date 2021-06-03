@@ -1,7 +1,7 @@
 .comment__container {
   display: flex;
 
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .comment__avatar {
@@ -12,7 +12,7 @@
   margin-left: -8px;
 
   background-color: #f5f5f5;
-  background-image: url("../img/avatar.png");
+  background-image: url("./img/avatar.png");
   background-repeat: no-repeat;
 
   border: 1px solid #c6ced4;

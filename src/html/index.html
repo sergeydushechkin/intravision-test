@@ -310,8 +310,23 @@
                 <div class="edit__properties properties">
                   <ul class="properties__list">
                     <li class="properties__property-status property-status">
-                      <div class="property-status__indicator"></div>
-                      <span class="property-status__text">В работе</span>
+                      <div class="property-status__container" style="display: none;">
+                        <div class="property-status__indicator"></div>
+                        <span class="property-status__text">
+                          <a class="property-status__link" href="">В работе</a>
+                        </span>
+                      </div>
+                      <div class="property__selector selector">
+                        <input class="selector__field" type="text" name="selector" value="рабо">
+                        <ul class="selector__list">
+                          <li class="selector__item">
+                            <a class="selector__link" href="" data-id="1">Иванов Денис</a>
+                          </li>
+                          <li class="selector__item">
+                            <a class="selector__link" href="" data-id="2">Петров Иван</a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="properties__property properties__property--applicant property">
                       <h3 class="property__title title">Заявитель</h3>
@@ -323,7 +338,20 @@
                     </li>
                     <li class="properties__property property">
                       <h3 class="property__title title">Исполнитель</h3>
-                      <div class="property__data">Кожин Игорь</div>
+                      <div class="property__data property__data--executor">
+                        <a class="property__link" style="display: none;" href="">Кожин Игорь</a>
+                        <div class="property__selector selector">
+                          <input class="selector__field" type="text" name="selector" value="Ива">
+                          <ul class="selector__list">
+                            <li class="selector__item">
+                              <a class="selector__link" href="" data-id="1">Иванов Денис</a>
+                            </li>
+                            <li class="selector__item">
+                              <a class="selector__link" href="" data-id="2">Петров Иван</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </li>
                     <li class="properties__property property">
                       <h3 class="property__title title">Приоритет</h3>
