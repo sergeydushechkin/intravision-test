@@ -1,16 +1,13 @@
 .property-status {
+  position: relative;
+}
+
+.property-status__container {
   display: flex;
-  align-items: center;
 }
 
 .property-status__indicator {
-  width: 12px;
-  height: 12px;
-
   margin-right: 10px;
-
-  background-color: red;
-  border-radius: 20px;
 }
 
 .property-status__link {

@@ -1,0 +1,35 @@
+.statuses {
+  position: absolute;
+}
+
+.statuses__list {
+  list-style: none;
+  overflow-y: auto;
+
+  width: 184px;
+  max-height: 170px;
+
+  margin: 0;
+  padding: 13px 19px;
+
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.statuses__item {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.statuses__indicator {
+  margin-right: 10px;
+}
+
+.statuses__link {
+  font-family: "Roboto Light", "Arial", sans-serif;
+  font-size: 14px;
+  color: #1faee9;
+  text-decoration: none;
+}
