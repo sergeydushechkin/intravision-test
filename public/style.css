@@ -623,6 +623,7 @@ body {
 
 .details {
   display: flex;
+  width: 986px;
   overflow-y: auto; }
 
 .details__detail {
@@ -656,7 +657,8 @@ body {
   color: #ffffff;
   font-size: 18px;
   line-height: 20px;
-  font-weight: normal; }
+  font-weight: normal;
+  white-space: nowrap; }
 
 .detail-header__text {
   font-family: "Roboto Light", "Arial", sans-serif;
