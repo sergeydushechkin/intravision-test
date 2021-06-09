@@ -1,5 +1,6 @@
 import * as React from "react";
 import Comments from "./comments";
+import Tags from "./tags";
 
 interface Props {
 
@@ -80,10 +81,7 @@ const Edit:React.FunctionComponent<Props> = (props: Props) => {
           </li>
           <li className="properties__property property">
             <h3 className="property__title title">Теги</h3>
-            <ul className="property__tags tags">
-              <li className="tags__item">Сервер 1</li>
-              <li className="tags__item">mb_support_mymercedes</li>
-            </ul>
+            <Tags />
           </li>
         </ul>
       </div>
