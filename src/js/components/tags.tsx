@@ -1,14 +1,21 @@
 import * as React from "react";
 
 interface Props {
-
+  tags: Array<{
+    id: number;
+    name: string;
+  }>;
 }
 
 const Tags:React.FunctionComponent<Props> = (props: Props) => {
+  const {tags} = props;
   return (
     <ul className="property__tags tags">
-      <li className="tags__item">Сервер 1</li>
-      <li className="tags__item">mb_support_mymercedes</li>
+      {
+        tags.map((it) => {
+          return (<li key={it.id} className="tags__item" data-id={it.id}>{it.name}</li>);
+        })
+      }
     </ul>
   );
 };

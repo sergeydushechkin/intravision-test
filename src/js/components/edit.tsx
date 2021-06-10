@@ -81,7 +81,7 @@ const Edit:React.FunctionComponent<Props> = (props: Props) => {
           </li>
           <li className="properties__property property">
             <h3 className="property__title title">Теги</h3>
-            <Tags />
+            <Tags tags={[{id: 123, name: `Сервер 1`}, {id: 456, name: `mb_support_mymercedes`}]}/>
           </li>
         </ul>
       </div>
