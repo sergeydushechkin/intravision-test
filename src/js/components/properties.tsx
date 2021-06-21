@@ -1,5 +1,4 @@
 import * as React from "react";
-import Comments from "./comments";
 import Tags from "./tags";
 
 interface Props {
